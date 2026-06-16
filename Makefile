@@ -59,7 +59,8 @@ test: $(TARGET)
 	mpirun -np 4 ./$(TARGET) -M 8192 -N 8192 -k 96 -P 2 -Q 2 -verify -n_iter 10
 	mpirun -np 4 ./$(TARGET) -M 8000 -N 8000 -k 64 -P 2 -Q 2 -verify -n_iter 10
 	mpirun -np 4 ./$(TARGET) -M 4000 -N 8000 -k 32 -P 2 -Q 2 -verify -n_iter 10
-	mpirun -np 4 ./$(TARGET) -M 4000 -N 8000 -k 16 -P 2 -Q 2 -verify -n_iter 10
+	mpirun -np 4 ./$(TARGET) -M 8000 -N 8000 -k 20 -P 2 -Q 2 -verify -n_iter 10
+	mpirun -np 4 ./$(TARGET) -M 4000 -N 8000 -k 8 -P 2 -Q 2 -verify -n_iter 10
 
 # ===== Benchmark completo =====
 benchmark: $(TARGET)

@@ -1,5 +1,5 @@
 To run the project:
-cd ProgettoSCPA
+cd ProgettoSCPA 
 make clean
 module load cuda/12.6
 module load gnu/12
